@@ -1,0 +1,22 @@
+{
+    "name": "M. Dawi Syauqi",
+    "short_name": "Dawi",
+    "description": "A simple website to explore more about me.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Logo_Unand_PTNBH.png/492px-Logo_Unand_PTNBH.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Logo_Unand_PTNBH.png/492px-Logo_Unand_PTNBH.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
