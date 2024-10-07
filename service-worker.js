@@ -46,3 +46,18 @@ self.addEventListener('activate', event => {
     })
   );
 });
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        if (response) {
+          return response; // Return cached resource
+        }
+        return fetch(event.request).catch(() => {
+          console.log('Fetching failed; returning offline page instead.');
+          return caches.match('/offline.html');  // Fallback to offline page
+        });
+      })
+  );
+});
